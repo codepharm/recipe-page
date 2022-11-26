@@ -88,17 +88,20 @@ img {
   transform: rotate(8deg) translate(3rem, 1rem);
 }
 
-.top-right .number {
-  background-color: black;
-  border-radius: 50%;
+.number {
+  background-image: url(./images/splatter.svg);
   color: white;
-  font-size: 3rem;
-  margin-bottom: -4rem;
-  padding: 1rem 2rem;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  padding: 1.5rem 2rem;
   position: relative;
+  z-index: 10;
+}
+
+.top-right .number {
+  margin-bottom: -6rem;
   transform: rotate(-12deg) translate(-13rem, -6rem);
   width: fit-content;
-  z-index: 10;
 }
 
 .middle,
@@ -114,14 +117,10 @@ img {
 }
 
 .middle .number {
-  background-color: black;
-  border-radius: 50%;
-  color: white;
-  font-size: 3rem;
   margin-bottom: -4rem;
   padding: 1rem 2rem;
   position: relative;
-  transform: rotate(12deg) translate(2rem, -4rem);
+  transform: rotate(12deg) translate(3rem, -5rem);
   width: fit-content;
   z-index: 10;
 }
@@ -131,14 +130,10 @@ img {
 }
 
 .bottom .number {
-  background-color: black;
-  border-radius: 50%;
-  color: white;
-  font-size: 3rem;
   margin-bottom: -4rem;
   padding: 1rem 2rem;
   position: relative;
-  transform: rotate(-12deg) translate(-18rem, -6rem);
+  transform: rotate(-12deg) translate(-19rem, -7rem);
   width: fit-content;
   z-index: 10;
 }
@@ -165,7 +160,7 @@ img {
     transform: rotate(8deg) translate(1rem, 1rem);
   }
   .top-right .number {
-    transform: rotate(-12deg) translate(-6rem, -4rem);
+    transform: rotate(-12deg) translate(-6rem, -6rem);
   }
 
   .middle img {
