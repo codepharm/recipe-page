@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url(./images/background-wood.jpg);
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title {
+  background-color: black;
+  color: white;
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
+  text-align: center;
+  width: 104%;
+  transform: translate(-2%, -8%);
+  overflow-x: hidden;
+}
+
+.title h1 {
+  margin: 0;
+  transform: scale(1.1) translateY(-8%);
+}
+
+img {
+  border: 20px solid black;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+  width: 15rem;
+}
+
+.white-background {
+  background-color: white;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 2rem 3rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.top div {
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.top-left {
+  background-color: white;
+  border: 3px solid black;
+  font-size: 1.125rem;
+  text-align: center;
+  min-width: 40%;
+  padding: 0 1rem;
+}
+
+.top-left hr {
+  width: 100%;
+}
+
+.top-left table {
+  margin: auto;
+}
+
+.quantity {
+  padding-right: 0.5rem;
+}
+
+.top-right {
+  max-width: 30rem;
+}
+
+.top-right img {
+  transform: rotate(8deg) translate(3rem, 1rem);
+}
+
+.top-right .number {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: -4rem;
+  padding: 1rem 2rem;
+  position: relative;
+  transform: rotate(-12deg) translate(-13rem, -6rem);
+  width: fit-content;
+  z-index: 10;
+}
+
+.middle,
+.bottom {
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  padding-bottom: 3rem;
+}
+
+.middle img {
+  transform: rotate(-8deg) translateX(6rem);
+}
+
+.middle .number {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: -4rem;
+  padding: 1rem 2rem;
+  position: relative;
+  transform: rotate(12deg) translate(3rem, -4rem);
+  width: fit-content;
+  z-index: 10;
+}
+
+.bottom img {
+  transform: rotate(8deg) translateX(-1rem);
+}
+
+.bottom .number {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: -4rem;
+  padding: 1rem 2rem;
+  position: relative;
+  transform: rotate(-12deg) translate(-18rem, -6rem);
+  width: fit-content;
+  z-index: 10;
+}
+
+.middle div,
+.bottom div {
+  margin: auto;
+  max-width: 500px;
+}
+
+@media (max-width: 860px) {
+  .top,
+  .middle {
+    flex-direction: column;
+  }
+  .bottom {
+    flex-direction: column-reverse;
+  }
+
+  .top-right {
+    text-align: center;
+  }
+  .top-right .number {
+    transform: rotate(-12deg) translate(-4rem, -4rem);
+  }
+
+  .middle img {
+    transform: rotate(-8deg);
+  }
+  .middle .number {
+    transform: rotate(12deg) translate(6rem, -6rem);
+  }
+
+  .bottom .number {
+    transform: rotate(-12deg) translate(-10rem, 10rem);
+  }
+}
